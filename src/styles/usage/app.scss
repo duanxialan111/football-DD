@@ -1,0 +1,40 @@
+html,body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+
+@charset "utf-8";
+@import "../lib/core/reset";
+@import "../lib/widget/yo-dialog";
+@import "../lib/element/yo-loading";
+@import "./module/index";
+@import "./module/home";
+@import "./module/guide";
+@import "./module/my";
+@import "./module/detail";
+@import "./module/find";
+@import "./module/register";
+@import "./core/common.scss";
+@import "./core/swiper-3.3.1.min.css";
+
+//公共样式   包含文件
+spa-app{
+	position:absolute;
+	overflow:hidden;
+	width:100%;
+	height:100%;
+}
+
+spa-view{
+	//position:absolute;
+	z-index:0;
+	top:0;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	background:#eceef0!important;
+	@include flexbox(flex);
+	@include flex-direction(column);
+}

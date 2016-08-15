@@ -1,0 +1,51 @@
+var myTpl=require("../templates/my.string");
+//引入swiper的第三方的animate插件
+var mod=require("../lib/swiper.animate1.0.2.min");
+/*console.log(mod);
+*/
+SPA.defineView("my",{
+	html:myTpl,//Dom结构
+	//引入delegated插件，用于定义tap事件
+	plugins:[
+		"delegated"
+	],
+	styles:{
+		background:"transparent!important",
+		height:"200px!important",
+		width:"280px!important",
+		left:"20px!important"
+	},
+	//绑定视图事件
+	bindEvents:{
+		//视图显示出来之前执行的回调函数
+		beforeShow:function(){
+			
+		},
+		//视图显示出来之后执行的回调函数
+		show:function(){			
+		}
+	},
+	bindActions:{
+		/*"tap.submit":function(){
+			this.hide();
+		},*/
+		"tap.register":function(e){
+			/*console.log(1);*/
+			/*this.hide();*/
+			/*SPA.open("register",{
+				ani:{
+					name:"actionSheet",
+					distance:200
+				}
+			});*/
+			SPA.show("register",{
+				ani:{
+					name:"actionSheet"
+				}
+			});
+		},
+		"tap.submit":function(e){
+			this.hide();
+		}
+	}
+})

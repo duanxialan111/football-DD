@@ -1,0 +1,28 @@
+{
+  "ver": "1.0",
+  "ret": true,
+  "errcode": 0,
+  "errmsg": "",
+  "data": [{
+    "img": "/images/img1.jpg",
+    "title": "1refresh"
+  }, {
+    "img": "/images/img2.jpg",
+    "title": "2refresh"
+  }, {
+    "img": "/images/img3.jpg",
+    "title": "3refresh"
+  }, {
+    "img": "/images/img4.jpg",
+    "title": "4refresh"
+  }, {
+    "img": "/images/img1.jpg",
+    "title": "5refresh"
+  }, {
+    "img": "/images/img2.jpg",
+    "title": "6refresh"
+  }, {
+    "img": "/images/img3.jpg",
+    "title": "7refresh"
+  }]
+}

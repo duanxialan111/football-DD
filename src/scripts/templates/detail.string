@@ -1,0 +1,16 @@
+<div class="m-detail">
+	<header>
+		<ul>
+			<li action-type="goto.back" class="yo-ico">&#xe859;</li>
+			<li>{{title}}1</li>
+			<li class="yo-ico">&#xe62c;</li>
+		</ul>
+    </header>
+     <section ms-visible="!isShowLoading">
+     	<p><img ms-src="imgsrc" alt=""></p>
+     	<article>{{description}}</article>
+     </section>
+     <div class="yo-loading yo-loading-a" ms-visible="isShowLoading">
+	    <div class="inner"><i class="yo-ico"></i></div>
+	</div>
+</div>

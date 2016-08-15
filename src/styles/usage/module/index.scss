@@ -1,0 +1,67 @@
+.m-container{
+	@include flexbox();//父盒子
+	height:100%;
+	@include flex-direction(column);
+	.m-wrapper{
+		@include flexbox();
+		@include flex-direction(column);
+        @include flex(1);
+        width:100%;
+        height:100%;
+	}
+	footer{
+	    height:.44rem;
+	    background:#FFFFFF;
+	    z-index:1001;
+	    ul{
+	    	@include flexbox();
+	    	width:100%;
+	    	height:100%;
+	    	@include border(1px 0 0 0,#333);
+	    	li{
+	    		@include flex(1);
+	    		width:100%;
+	    		height:.44rem;
+	    		text-align:center;
+	    		color:#D6D6D6;
+	    		&.active{
+	    			color:#08BD3C;
+	    		}	    		
+	    		i{	    			
+	    			width:100%;
+	    			height:.22rem;
+	    			display:block;
+	    			//padding-top:.02rem;
+	    			font-size:.16rem;
+	    			line-height:.22rem;
+	    		}
+	    		b{
+	    			line-height:.22rem;
+	    			width:100%;
+	    			height:.22rem;
+	    			display:block;
+	    			font-size:.12rem;
+	    			font-weight:normal;
+	    		}
+	    		&:nth-of-type(3){
+	    			position:relative;
+	    			i{
+	    				position:absolute;
+	    				left:50%;
+	    				top:-0.09rem;
+	    				@include box-sizing(border-box);
+	    				width:.5rem;
+	    				height:.5rem;
+	    				background:#fff;
+	    				font-size:.36rem;
+	    				line-height:.5rem;
+	    				text-align:center;
+	    				@include border(1px,#666,solid,50%);
+	    				@include transform(translate(-50%,0));
+	    				z-index:1000;
+	    			}			
+	    		}
+	    	}
+	    }
+	}
+}
