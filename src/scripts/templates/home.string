@@ -16,7 +16,11 @@
               <div class="swiper-slide" id="hot-slide">
                 <nav>
                    <ul>
+<<<<<<< HEAD
                     <li class="active" action-type="tap.slide">足球</li>
+=======
+                    <li class="active" action-type="tap.slide">足球现</li>
+>>>>>>> 20160815-foot-bug
                     <li action-type="tap.slide">足球生活</li>
                     <li action-type="tap.slide">足球美女</li>
                    </ul>
