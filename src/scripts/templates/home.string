@@ -16,7 +16,7 @@
               <div class="swiper-slide" id="hot-slide">
                 <nav>
                    <ul>
-                    <li class="active" action-type="tap.slide">足球</li>
+                    <li class="active" action-type="tap.slide">进</li>
                     <li action-type="tap.slide">足球生活</li>
                     <li action-type="tap.slide">足球美女</li>
                    </ul>
